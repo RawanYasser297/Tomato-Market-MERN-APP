@@ -1,0 +1,275 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+  
+  }
+  
+  /* Empty cart message */
+  .empty-card {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .empty-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .battery {
+    font-size: 40px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual card items */
+  /* .card-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  } */
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  td {
+    background-color: #fff;
+    font-size: 14px;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .item-title, .item-price, .item-total {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .card-item-offer {
+    background-color: #f0f8ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .card-item-offer h4 {
+    font-size: 14px;
+    color: #007bff;
+  }
+  
+  .card-item-offer p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Counter (Increase/Decrease Quantity) */
+  .counter .add-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .counter .add-more span {
+    font-size: 18px;
+    cursor: pointer;
+    color: #007bff;
+    padding: 5px;
+    margin: 0 10px;
+  }
+  
+  .plus, .minus {
+    font-size: 20px;
+  }
+  
+  .item-price {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Close Item Icon */
+  .close-item {
+    font-size: 30px;
+    color: #ff6f61;
+    cursor: pointer;
+  }
+  
+  /* Actions Column */
+  td:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Customer and total information */
+  .customer-container {
+    padding: 20px;
+    display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+  
+  .total-container {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .total-container h4 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .total-container p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .promo-code {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .promo-code h4 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .promo-code-input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .promo-code-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .promo-code-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Checkout button */
+  .checkout {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .checkout-btn {
+    padding: 12px 30px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #218838;
+  }
+
+
+  @media (max-width: 786px) {
+.customer-container{
+  flex-direction: column;
+}
+
+.promo-code{
+  width: 100%;
+}
+
+.total-container{
+  width: 100%;
+}
+
+th{
+  font-size: small;
+}
+th, td {
+  padding: 1px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+
+  }
+
+
+  @media (max-width:600px) {
+   th:nth-child(2),
+   td:nth-child(2){
+display: none;
+   }
+  }
+
+  @media (max-width:450px) {
+  .counter .add-more span {
+    font-size: 15px;
+    padding: 1px;
+    margin: 0 4px;
+    background-color: #f9f9f9;
+}
+
+
+
+   th:nth-child(4),
+   td:nth-child(4){
+display: none;
+   }
+
+.close-item {
+  font-size: 25px;
+}
+  }

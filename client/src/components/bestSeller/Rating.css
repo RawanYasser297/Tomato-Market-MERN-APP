@@ -1,0 +1,18 @@
+.stars .yellow{
+    color: orangered;
+}
+
+.gray{
+    color: rgb(121, 119, 119);
+}
+
+
+
+
+ul{
+    width: 50%;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}

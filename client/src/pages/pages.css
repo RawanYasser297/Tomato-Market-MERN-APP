@@ -1,0 +1,262 @@
+
+.app{
+    position: relative;
+}
+
+/* .cart .card-item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top:25px ;
+}
+
+ .counter{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-content: center;
+    font-size: larger;
+}
+
+ .counter .add-more{
+    display: flex;
+    height: 25px;
+    gap: 3%;
+    width: 90%;
+    justify-content: space-around;
+    background-color: bisque;
+    border-radius: 1%;
+    align-items: center;
+    margin: 5px;
+}
+
+.add-more .plus:hover,
+.add-more .mines:hover{
+    color:orangered;
+}
+
+ .counter .add{
+    display: flex;
+    height: px;
+    gap: 3%;
+    width: 90%;
+    justify-content: space-around;
+    background-color: #ffb256;
+    border-radius: 1%;
+    align-items: center;
+    margin: 5px;
+    color:white;
+    border: none;
+    height: 25px;
+    cursor: pointer;
+}
+
+ .counter .add:hover{
+    color: orangered;
+    border: solid orangered 2px;
+    }
+
+
+
+
+
+.cart .card-item .table .item-image{
+    width: 100px;
+    height: 100px;
+}
+
+.cart .card-item .table{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 130px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+    
+
+
+
+.cart .card-item .table h4{
+    margin-bottom:5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.item-title,
+.item-price,
+.item-total{
+    margin-bottom: 25px;
+}
+
+
+.close-item{
+    position: absolute;
+    font-size: x-large;
+    width: fit-content;
+    cursor: pointer;
+    top: 0%;
+    left: 90%;
+}
+
+.close-item:hover{
+    color: red;
+}
+
+
+.empty-card{
+    color: orangered;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+.empty-card .battery{
+    font-size: xx-large;
+    width: fit-content;
+    height: 45px;
+}
+.empty-card p{
+    font-weight: bold;
+}
+
+
+.customer-container{
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.total-container,
+.checkout
+{
+    width: 40%;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 10px;
+} */
+
+
+/* .total-container h4,
+.promo-code h4{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 15px;
+} */
+
+
+
+/* hr{
+    width: 90%;
+}
+
+.checkout button{
+    width: 70%;
+} */
+
+/* .checkout button,
+.place-order button{
+    height: 35px;
+    font-size: medium;
+    color: orangered;
+    background-color: transparent;
+    border: orangered 2px solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.checkout button:hover,
+.place-order button:hover{
+    color: white;
+    background-color:orangered;
+   
+}
+
+.promo-code{
+    width: 50%;
+    height: 35px;
+
+
+}
+
+.promo-code input,
+.place-order .inputs input{
+    width: 80%;
+    height: 35px;
+    padding-left: 5px;
+}
+
+
+.promo-code button{
+    width: 20%;
+    color: orangered;
+    background-color: transparent;
+    border: orangered 2px solid;
+    cursor: pointer;
+    height: 35px;
+}
+
+.promo-code button:hover{
+    color: white;
+    background-color:orangered;
+    border: orangered 2px solid;
+   
+} */
+
+.place-order h3{
+    width: 100%;
+}
+
+
+.place-order{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2%;
+    width: 98%;
+    gap: 2%;
+}
+
+.place-order .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 40%;
+    margin:10px 5px ;
+}
+
+
+.place-order .inputs input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.place-order .inputs input:first-child{
+    width: 50%;
+    margin-right: 5px;
+}
+.place-order .inputs input:nth-child(2){
+    width: 48.6%;
+}
+
+
+.place-order button{
+    width:20%;
+    margin-left: 5px;
+}
+
+
+

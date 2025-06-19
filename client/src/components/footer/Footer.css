@@ -1,0 +1,74 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Logo Styling */
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .footer-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e44d26; /* Tomato color */
+  }
+  
+  /* Social Media Icons */
+  .footer-social-media {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #e44d26; /* Tomato color on hover */
+  }
+  .footer-copyright {
+    margin-top: 20px; /* Space above the copyright section */
+    font-size: 1rem; /* Font size for the copyright */
+    color: #ccc; /* Light gray text color */
+  }
+  
+  .footer-copyright p{
+    margin: 0; /* Remove default margin */
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-social-media {
+      margin-top: 15px;
+    }
+    .footer-copyright {
+        margin-top: 30px; /* Extra space on mobile for the copyright section */
+      }
+  }

@@ -1,0 +1,142 @@
+.header{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.611);
+
+}
+
+
+
+.photo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    position:absolute;
+    z-index: 1;
+    padding: 10px;
+    animation: fadeIn 3s;
+    line-height: 1.5;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.playfair-display-h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main .h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main .h1 span{
+    color:orangered;
+    font-size: 95px;
+    line-height:1.5;
+    margin-left: 25px;
+}
+
+
+
+
+
+.main p{
+    width: 60%;
+
+}
+.view-more{
+    border-radius: 0px;
+    background-color: transparent;
+    font-size: medium;
+    border: solid 1px orangered;
+    width: 90px;
+    color: orangered;
+    height: 25px;
+}
+
+.view-more:hover{
+    border: solid 1px white;
+    width: 90px;
+    color: white;
+    height: 25px;
+}
+
+
+.less{
+    border-radius: 0px;
+    background-color: transparent;
+    font-size: medium;
+    border: solid 1px orangered;
+    width: 90px;
+    color: orangered;
+    height: 25px;
+}
+
+.less:hover{
+    border: solid 1px white;
+    width: 90px;
+    color: white;
+    height: 25px;
+}
+
+.more{
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .main .h1 span {
+        font-size: 50px;   
+    }
+    .main p{
+        display: none;
+    }
+    
+    .view-more{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .main p{
+        display: none;
+    }
+    .view-more{
+        display: none;
+    }
+
+}

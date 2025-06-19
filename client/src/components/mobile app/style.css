@@ -1,0 +1,84 @@
+.mobile-app-ad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f7f7; /* bright gray */
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin: 40px auto;
+  max-width: 1200px;
+  gap: 30px;
+}
+
+.mobile-app-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.mobile-app-content h2 {
+  font-size: 2rem;
+  color: #ff6600; /* orange */
+  margin-bottom: 16px;
+}
+
+.mobile-app-content p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.download-buttons a {
+  display: flex;
+  align-items: center;
+  background-color: #ff6600; /* orange */
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.download-buttons a .icon {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+.download-buttons a:hover {
+  background-color: #e05600;
+}
+
+.mobile-app-image {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.mobile-app-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .mobile-app-ad {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .download-buttons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,138 @@
+/* Basic container for the menu */
+.controllers-menu {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin:50px;
+  }
+  
+  /* Menu title styling */
+  .menu-h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Menu items count styling */
+  .menu-length {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* List of items */
+  .menu-list {
+   width:90%;
+   padding: 5%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Each list item */
+  .menu-list li {
+    width: 400px;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  /* Number for each item */
+  .number {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  /* Image styling for each menu item */
+  .menu-images {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  /* Item title styling */
+  .item-name {
+    font-size: 15px;
+    color: #333;
+    width: 40%;
+    padding: 5px;
+  }
+  
+  /* Update icon styling (RxUpdate) */
+  .RxUpdate {
+    font-size: 20px;
+    color: #2a9d8f;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Delete icon styling (MdDelete) */
+  .MdDelete {
+    font-size: 20px;
+    color: #e74c3c;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for icons */
+  .RxUpdate:hover, .MdDelete:hover {
+    opacity: 0.7;
+  }
+  
+  /* Responsiveness: For smaller screens */
+  @media screen and (max-width: 900px) {
+    .controllers-menu {
+      padding: 10px;
+    }
+  
+    .menu-h4 {
+      font-size: 20px;
+    }
+  
+    .menu-length {
+      font-size: 14px;
+    }
+  
+    .menu-list {
+        justify-content: space-between;
+    }
+    .menu-list li{
+        width: 300px;
+    }
+  
+    .number {
+      margin-bottom: 5px;
+    }
+  
+    .menu-images {
+      margin-bottom: 10px;
+    }
+  
+    .item-name {
+      font-size: 16px;
+    }
+  
+    .RxUpdate, .MdDelete {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-list {
+        justify-content: space-around;
+    }
+  }

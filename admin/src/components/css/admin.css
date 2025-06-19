@@ -1,0 +1,180 @@
+/* Main container for the controllers page */
+
+nav{
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    margin: 15px 10px;
+}
+
+nav a{
+  padding: 5px;
+}
+
+
+  
+  /* Opening paragraph with a highlight message */
+  .opening-p {
+   margin-top: 50px;
+   text-align: center;
+   font-size: x-large;
+   font-weight: bold;
+   color:  #06584f;
+  }
+  
+  /* Welcome message styling */
+  
+  
+  /* Styling for the buttons container */
+  /* .new-item {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Styling for each button */
+  .add {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2a9d8f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .add:hover {
+    background-color: #264653;
+    transform: translateY(-2px);
+  }
+  
+  /* Button active effect */
+  /* .add:active {
+    background-color: #1d5c4d;
+    transform: translateY(0);
+  } */
+   
+
+
+/* === Container Form Styling === */
+form.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* === Headline === */
+form.container h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* === Input Fields === */
+.new-item-container input,
+.new-item-container select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.new-item-container input:focus,
+.new-item-container select:focus {
+  border-color: #007bff;
+}
+
+/* === Grouped Inputs === */
+.newItems-inputs-div {
+  width: 100%;
+}
+
+/* === Submit Button === */
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* === Error Message === */
+form.container p {
+  margin: 5px 0 0;
+  font-size: 0.85rem;
+}
+
+/* === Success Message === */
+form.container .success-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: green;
+  font-weight: bold;
+}
+
+/* === Back Link === */
+.back-link {
+  margin-top: 20px;
+  text-align: center;
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #0056b3;
+}
+
+
+
+
+
+
+
+
+  /* Responsive layout for smaller screens */
+  @media screen and (max-width: 768px) {
+    .controllers {
+      padding: 20px;
+    }
+  
+    .opening-p {
+      font-size: 18px;
+    }
+  
+    .controllers p {
+      font-size: 14px;
+    }
+  
+    .new-item {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  

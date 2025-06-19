@@ -1,0 +1,102 @@
+.best-seller {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    margin: 20px;
+    }
+  
+  .best-seller h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .best-seller p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the list of items */
+  .list_BS {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item-BS {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:200px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+  
+ 
+  
+  /* Styling for the image inside each item */
+  .item-BS img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Item details section */
+  .details {
+    margin-top: 10px;
+  }
+  
+  .details .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .details .description {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .details .price {
+    font-size: 1.3rem;
+    color: #e44d26;
+    font-weight: 600;
+  }
+  
+  /* Rating section */
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Shopping Bag Icon Styles */
+  .TbShoppingBag, .TbShoppingBagCheck {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+ 
+  
+  .TbShoppingBagCheck {
+    color: #4caf50; /* Green color when item is added */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    
+    .item-BS {
+      margin-bottom: 20px;
+    }
+  }
