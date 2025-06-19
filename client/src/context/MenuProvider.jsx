@@ -1,5 +1,5 @@
 import { createContext ,useEffect,useState } from "react"
-import { axiosPrivet } from "../api/axios";
+import axios from "axios";
 export const MenuContext=createContext()
 
 
@@ -8,7 +8,7 @@ const MenuProvider = ({children}) => {
   const [items, setItems] = useState([]);
   const getData=async()=>{
       try{
-          const response=await axiosPrivet.get('/api/items')
+          const response=await axios.get('https://tomato-market-mern-app-server.onrender.com/api/items')
           if(!response)throw new Error('Something bad happened.');
           setItems(response.data.items)
   }
