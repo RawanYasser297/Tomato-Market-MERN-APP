@@ -31,8 +31,9 @@ app.use(cookieParser())
 const port =process.env.PORT || 5555
 const allowedOrigins = [
   'http://localhost:5173',
-  process.env.STRIPE_LINK // Ensure this is defined in your environment variables
-].filter(Boolean); // This will remove any undefined values
+  'https://your-frontend.onrender.com',
+  process.env.STRIPE_LINK
+].filter(Boolean);
 
 // Use CORS middleware
 app.use(cors({
