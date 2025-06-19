@@ -3,7 +3,7 @@ const About = ({id}) => {
   return (
     <section className="about-us" id={id}>
         <div className='one'>
-        <img className='about-image' src="../../../public/Delivery.jpeg" alt="" />
+        <img className='about-image' src="https://tomato-market-mern-app-server.onrender.com/images/Delivery.jpeg" alt="" />
         <div className="about-us-content">
             <h3 className='playfair-display-h3'>Fast and Reliable Home Delivery Service</h3>
             <p className='about-p'>
@@ -13,7 +13,7 @@ const About = ({id}) => {
         </div>
         </div>
         <div className='two'>
-        <img className='about-image' src="../../../public/Data entry jobs blue RGB color icon (1).jpeg" alt="" />
+        <img className='about-image' src="https://tomato-market-mern-app-server.onrender.com/images/Data entry jobs blue RGB color icon (1).jpeg" alt="" />
         <div className="about-us-content">
             <h3 className='playfair-display-h3'>Fast and Easy Ordering – Call Our Hotline Now!</h3>
             <p className='about-p'>
@@ -23,7 +23,7 @@ const About = ({id}) => {
         </div>
         </div>
         <div className='three'>
-        <img className='about-image' src="../../../public/Location map animation.jpeg" alt="" />
+        <img className='about-image' src="https://tomato-market-mern-app-server.onrender.com/images/Location map animation.jpeg" alt="" />
         <div className="about-us-content">
             <h3 className='playfair-display-h3'>Visit Our Convenient Locations – Now with Multiple Branches!</h3>
             <p className='about-p'>
