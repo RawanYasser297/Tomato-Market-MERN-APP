@@ -5,7 +5,7 @@ import "./css/admin.css";
 //import { BiSolidPlusSquare } from "react-icons/bi";
 import { Link, useNavigate } from "react-router-dom";
 import { FaCheck } from "react-icons/fa";
-axios.defaults.baseURL = "http://localhost:5555/";
+axios.defaults.baseURL = "https://tomato-market-mern-app-server.onrender.com";
 axios.defaults.withCredentials = true;
 const CreateItem = () => {
   const [image, setImage] = useState('');
