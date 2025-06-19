@@ -35,7 +35,7 @@ const {user,setAlert,alert}=useContext(UserContext)
 const mapping =((item, index) =>{
   return (
     <li key={index} className="item-BS" id="menu">
-       <img src={`http://localhost:5555/${item.image}`} alt={item.name} />
+       <img src={`https://tomato-market-mern-app-server.onrender.com/${item.image}`} alt={item.name} />
       <div className="details">
         <h3 className="title">{item.title}</h3>
         <p className="description">{item.category}</p>
