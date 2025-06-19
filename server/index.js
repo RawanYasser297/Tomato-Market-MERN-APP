@@ -32,7 +32,7 @@ const port =process.env.PORT || 5555
 const allowedOrigins = [
   'http://localhost:5173',
   'https://tomato-market-mern-app-client-side.onrender.com',
-  'https://tomato-market-mern-app.onrender.com'
+  'https://tomato-market-mern-app.onrender.com',
   process.env.STRIPE_LINK
 ].filter(Boolean);
 
