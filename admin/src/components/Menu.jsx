@@ -58,7 +58,7 @@ console.log("ddddd"+items.map(e=>e.title))
       <ul className="menu-list">
         {items.map((item,index) =><li key={index}>
             <span className="number">{index+1}</span>
-            <img src={`http://localhost:5555/${item.image}`} className="menu-images" />
+            <img src={`https://tomato-market-mern-app-server.onrender.com/${item.image}`} className="menu-images" />
             <div className="item-name">{item.title}</div>
             <Link to={`/editItem/${item._id}`}>
               <RxUpdate className="RxUpdate" />
