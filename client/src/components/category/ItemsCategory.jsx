@@ -1,30 +1,38 @@
-import { useContext } from "react"
-import {useParams} from "react-router-dom"
-import Rating from "../bestSeller/Rating";
+import {useContext } from "react";
+import "./bs.css";
+import Rating from "./Rating";
 import { ItemContext } from "../../context/ItemProvider";
-import { MenuContext } from "../../context/MenuProvider";
 import { TbShoppingBagCheck, TbShoppingBag } from "react-icons/tb";
+import { MenuContext } from "../../context/MenuProvider";
+import { UserContext } from "../../context/UserContext";
+import { useParams } from 'react-router-dom';
 
 const ItemsCategory = () => {
-    const { items } = useContext(MenuContext);
     const category =useParams()
     const {addNewCardItem,cardItem,removeElement}=useContext(ItemContext)
-    console.log(items)
-    console.log(category.category)
+  const {items}=useContext(MenuContext)
+const {user,setAlert,alert}=useContext(UserContext)
+  
 
     const mapping =((item, index) => {
- 
-        const handleAddToCart = () =>{
-          addNewCardItem(item.title);
-        };
-        
+ const handleAddToCart = (item) =>{
+    if (user){
+    addNewCardItem(item.title);
+    }
 
-        const handleAddToCardIcon = (item) => {
-          const added=cardItem.map(item=>item.itemName).includes(item.title)
-          console.log("added" + added)
-          return  !added?<TbShoppingBag className="TbShoppingBag" onClick={()=>handleAddToCart(item)}/> :<TbShoppingBagCheck className="TbShoppingBagCheck" onClick={()=>removeElement(item.title)}/>
-        
-      }
+  };
+
+  
+
+
+  const handleAddToCardIcon = (item) => {
+    const added=cardItem.map(item=>item.itemName).includes(item.title)
+    console.log("added" + added)
+    return  !added?<TbShoppingBag className="TbShoppingBag" onClick={()=>{
+      setAlert(!alert)
+      handleAddToCart(item)}}/> :<TbShoppingBagCheck className="TbShoppingBagCheck" onClick={()=>removeElement(item.title)}/>
+  
+}
       
         return (
           <li key={index} className="item-BS">
@@ -63,3 +71,4 @@ const ItemsCategory = () => {
 }
 
 export default ItemsCategory
+
