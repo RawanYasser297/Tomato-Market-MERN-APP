@@ -17,7 +17,7 @@ const EditItem = () => {
 
   const getItem=async()=>{
     try{
-const response =await axios.get(`http://localhost:5555/admin/${id}`)
+const response =await axios.get(`https://tomato-market-mern-app-server.onrender.com/admin/${id}`)
 if(!response){
   throw new Error("Item not found")
 }
