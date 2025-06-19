@@ -1,7 +1,7 @@
 import Header from "../components/header/Header";
 //import List from "../components/bestSeller/List";
 import Category from "../components/category/Category";
-import About from "../components/aboutUs/about";
+import About from "../components/aboutUs/About";
 import {useState} from'react'
 import Offers from "../components/offers/Offers";
 import BestSelling from "../components/bestSeller/bestSelling";
