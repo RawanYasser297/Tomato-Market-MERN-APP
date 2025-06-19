@@ -6,7 +6,7 @@ import axios from 'axios'
 import { useEffect, useState } from "react";
 import './css/menu.css'
 
-axios.defaults.baseURL = "http://localhost:5555/";
+axios.defaults.baseURL = "https://tomato-market-mern-app-server.onrender.com";
 axios.defaults.withCredentials = true;
 
 const Menu = () => {
