@@ -40,7 +40,7 @@ const CreateItem = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5555/admin/createItem",
+        "/admin/createItem",
         data,
         {
           headers: {
