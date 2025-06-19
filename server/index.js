@@ -28,7 +28,7 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use(multer({ storage: fileStorage }).single('image'));
 
 app.use(cookieParser())
-const port =process.env.PORT || '5555'
+const port =process.env.PORT || 5555
 const allowedOrigins = [
   'http://localhost:5173',
   process.env.STRIPE_LINK // Ensure this is defined in your environment variables
