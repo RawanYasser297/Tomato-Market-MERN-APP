@@ -2,39 +2,39 @@
 const categoryList=[
     {
         'name':'Breakfast',
-        'img':'../../public/Ovo Frito Desenho Para Colorir.jpeg'
+        'img':'https://tomato-market-mern-app-server.onrender.com/images/Ovo Frito Desenho Para Colorir.jpeg'
     },
     {
         'name':'Snacks',
-        'img':'./Grapes free icons designed by Smashicons (1).jpeg'
+        'img':'https://tomato-market-mern-app-server.onrender.com/images/Grapes free icons designed by Smashicons (1).jpeg'
     },
 
 {
     'name':'Hot drink',
-    'img':'../../public/Tea Cup.jpeg'
+    'img':'https://tomato-market-mern-app-server.onrender.com/images/Tea Cup.jpeg'
 },
 
 {
     'name':'Main Dishes',
-    'img':'../../public/dinner.jpeg'
+    'img':'https://tomato-market-mern-app-server.onrender.com/images/dinner.jpeg'
 },
 
 {
     'name':'Salad',
-    'img':'../../public/salad.jpeg'
+    'img':'https://tomato-market-mern-app-server.onrender.com/images/salad.jpeg'
 },
 {
     'name':'Appetizer',
-    'img':'../../public/French Fries .jpeg'
+    'img':'https://tomato-market-mern-app-server.onrender.com/images/French Fries .jpeg'
 },
 
 {
     'name':'Dessert',
-    'img':'../../public/30 free icons of Ice cream designed by Handicon.jpeg'
+    'img':'https://tomato-market-mern-app-server.onrender.com/images/30 free icons of Ice cream designed by Handicon.jpeg'
 },
 {
     'name':'Cold drink',
-    'img':'../../public/lemon.jpeg'
+    'img':'https://tomato-market-mern-app-server.onrender.com/images/lemon.jpeg'
 },
 
 ]
