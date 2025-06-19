@@ -7,7 +7,7 @@ import React from "react";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <React.StrictMode>
-    <BrowserRouter basename="/admin">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
