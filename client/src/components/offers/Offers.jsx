@@ -74,7 +74,7 @@ const offer=(item)=>{
             return (
               <SwiperSlide className='swiperSlide-offers' key={index} style={{width:"180px"}}>
                 <div  style={{width:'100%',textAlign:"center"}}>
-                 <img src={`http://localhost:5555/${item.image}`} alt={item.title} /> 
+                 <img src={`https://tomato-market-mern-app-server.onrender.com/${item.image}`} alt={item.title} /> 
                 </div>
                  
                   <p className='title-offer-item rowdies-regular' style={{fontSize:'medium',width:'100%',textAlign:"center"}}>{item.title}</p>
