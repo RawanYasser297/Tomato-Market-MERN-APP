@@ -5,7 +5,7 @@ import axios from "axios";
 //import{useNavigate} from 'react-router-dom'
 //import User from "../../../server/model/User";
 
-axios.defaults.baseURL='http://localhost:5555/'
+axios.defaults.baseURL="https://tomato-market-mern-app-server.onrender.com"
 axios.defaults.withCredentials='true'
 export const UserContext =createContext()
 
