@@ -3,7 +3,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import categoryList from '../category';
 
-const EditItem = () => {
+const EditItem = (e) => {
+   e.preventDefault()
   const params = useParams();
   const id = params.id;
   const [initialValue,setInitialValue]=useState({image: '',
