@@ -1,11 +1,11 @@
-import {useContext } from "react";
-import "./bs.css";
-import Rating from "./Rating";
-import { ItemContext } from "../../context/ItemProvider";
 import { TbShoppingBagCheck, TbShoppingBag } from "react-icons/tb";
-import { MenuContext } from "../../context/MenuProvider";
-import { UserContext } from "../../context/UserContext";
-import { useParams } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
+import { UserContext } from './../../context/UserContext';
+import { useContext } from 'react';
+import { ItemContext } from '../../context/ItemProvider';
+import { MenuContext } from '../../context/MenuProvider';
+import Rating from "../bestSeller/Rating";
+import './Category.css'
 
 const ItemsCategory = () => {
     const category =useParams()
