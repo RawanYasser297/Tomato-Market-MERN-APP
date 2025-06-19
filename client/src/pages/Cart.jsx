@@ -79,7 +79,7 @@ const findItem=(item)=>{
         {items.filter((item)=>cardItem.some(cartItem => cartItem.itemName === item.title)).map((item,index)=>{
 
         return(<tr key={index} className="card-item">
-      <td> <img src={`http://localhost:5555/${item.image}`} alt="" className="item-image" /></td>
+      <td> <img src={`https://tomato-market-mern-app-server.onrender.com/${item.image}`} alt="" className="item-image" /></td>
       <td className="table"><p className="item-title">{item.title}</p></td>
       <td className="table"><p className="item-price" >${item.price}</p></td>
       <td className="table"><p className="item-price">{
