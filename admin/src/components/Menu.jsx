@@ -15,7 +15,7 @@ const Menu = () => {
   const [items,setItems]=useState([])
   const getData=async()=>{
     try{
-      const response = await axios.get('/admin');
+      const response = await axios.get('https://tomato-market-mern-app-server.onrender.com/admin');
       if(!response)throw new Error('Something bad happened.');
       console.log(response.data)
       setItems(response.data.items)
