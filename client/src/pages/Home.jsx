@@ -4,7 +4,7 @@ import Category from "../components/category/Category";
 import About from "../components/aboutUs/About";
 import {useState} from'react'
 import Offers from "../components/offers/Offers";
-import BestSelling from "../components/bestSeller/bestSelling";
+import BestSelling from "../components/bestSeller/BestSelling";
 import MobileAppAd from "../components/mobile app/MobileAppAd";
 // import { Link } from "react-router-dom";
 // import { BiCog } from "react-icons/bi";
