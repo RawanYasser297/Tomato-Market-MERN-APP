@@ -37,7 +37,7 @@ useEffect(()=>{
 const UpdateItem=async()=>{
   
   try{
-  const response =await axios.patch(`http://localhost:5555/admin/${id}`,initialValue)
+  const response =await axios.patch(`https://tomato-market-mern-app-server.onrender.com/admin/${id}`,initialValue)
   console.log(response)
   }catch(err){
     console.log(err)
