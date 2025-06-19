@@ -3,7 +3,7 @@ import { UserContext } from "../context/UserContext";
 import axios from "axios";
 
 
-axios.defaults.baseURL='http://localhost:5555/'
+axios.defaults.baseURL="https://tomato-market-mern-app-server.onrender.com"
 axios.defaults.withCredentials='true'
 
 const LogOut = () => {
