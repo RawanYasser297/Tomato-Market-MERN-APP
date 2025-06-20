@@ -23,7 +23,14 @@ if(!response){
   throw new Error("Item not found")
 }
 console.log(response.data)
-setInitialValue(response.data.dish)
+
+if (!response) {
+        setErr("Something bad happened.");
+      }
+      setInitialValue(response.data.dish)
+      setErr(null);
+      setMsg("added successfully");
+      
     }catch(error){
       console.log(error)
     }
@@ -112,7 +119,21 @@ const UpdateItem=async(e)=>{
         </select>
 
       </div>
+    {msg && (
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            padding: "5px",
+            fontSize: "x-large",
+          }}
+        >
+          <FaCheck style={{ color: "green" }} />
+          <p style={{ color: "green", fontWeight: "bold" }}>{msg}</p>
+        </div>
+      )}
       <button type="submit" className="button" style={{margin:"15px"}}>add</button>
+    
       <Link to='/admin' className='back-link' >
       back to menu
       </Link>
