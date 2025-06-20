@@ -93,12 +93,22 @@ const UpdateItem=async(e)=>{
           onChange={(e) => setInitialValue(prev => ({ ...prev, offer:e.target.value }))}
         />
          <select
-        name="category" 
-        defaultValue={initialValue.category}
-        onChange={(e) => setInitialValue(prev => ({ ...prev, category:e.target.value }))}
+          name="category"
+          defaultValue={initialValue.category}
+          onChange={(e) =>
+            setInitialValue((prev) => ({ ...prev, category: e.target.value }))
+          }
         >
-        {categoryList.map((item,index)=>
-             <option  key={index} value={item.name}>{item.name}</option>)}
+
+          <option  value={initialValue.category}>
+              {initialValue.category}
+            </option>
+          
+          {categoryList.map((item, index) =>item.name != initialValue.category? (
+            <option key={index} value={item.name}>
+              {item.name}
+            </option>
+          ):"")}
         </select>
 
       </div>
