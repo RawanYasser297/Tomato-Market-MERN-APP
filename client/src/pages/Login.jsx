@@ -82,7 +82,7 @@ passwordError?<div className='error-compo'>
                 />
                 <label htmlFor="persist">Remember me</label>
                 </div>
-                <button className='button'>SignUp</button>
+                <button className='button'>Login</button>
                 <div className='last-line'>
                 <p>do not have an account</p>
                 <Link to='/register' className='link'>Register</Link>
