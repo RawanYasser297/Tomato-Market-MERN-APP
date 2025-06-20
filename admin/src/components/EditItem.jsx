@@ -7,7 +7,9 @@ const EditItem = () => {
   
   const params = useParams();
   const id = params.id;
-  const[msg,setMsg]=useState('');
+   const [msg, setMsg] = useState("");
+  const [err, setErr] = useState(null);
+  const navigate=useNavigate()
   const [initialValue,setInitialValue]=useState({image: '',
     title: '',
     price: '',
@@ -16,6 +18,7 @@ const EditItem = () => {
     offer: '',
     category:''
   })
+  
 
   const getItem=async()=>{
     try{
@@ -31,6 +34,7 @@ if (!response) {
       setInitialValue(response.data.dish)
       setErr(null);
       setMsg("added successfully");
+      navigate('/menu')
       
     }catch(error){
       console.log(error)
@@ -60,7 +64,7 @@ const UpdateItem=async(e)=>{
         <input type="text"
         defaultValue={initialValue.image}
         placeholder="input image file name"
-        
+        onChange={(e) => setInitialValue(prev => ({ ...prev, image:e.target.value }))}
         />
 
         <input
