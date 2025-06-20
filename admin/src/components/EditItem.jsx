@@ -29,13 +29,9 @@ if(!response){
 }
 console.log(response.data)
 
-if (!response) {
-        setErr("Something bad happened.");
-      }
+
       setInitialValue(response.data.dish)
-      setErr(null);
-      setMsg("added successfully");
-      navigate('/menu')
+     
       
     }catch(error){
       console.log(error)
@@ -53,6 +49,12 @@ const UpdateItem=async(e)=>{
   try{
   const response =await axios.patch(`https://tomato-market-mern-app-server.onrender.com/admin/${id}`,initialValue)
   console.log(response)
+     if (!response) {
+        setErr("Something bad happened.");
+      }
+      setErr(null);
+      setMsg("added successfully");
+      navigate('/menu')
   }catch(err){
     console.log(err)
   }
