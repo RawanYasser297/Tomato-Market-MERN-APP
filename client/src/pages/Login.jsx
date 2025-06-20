@@ -61,7 +61,7 @@ const Login = () => {
                     }
                     
                     <label>Password</label>
-                    <input type={passwordError?'error-input':'text'}  placeholder="Password" onChange={(e)=>{
+                    <input type={passwordError?'error-input':'password'}  placeholder="Password" onChange={(e)=>{
                         setEmailsError(null)
                         setPasswordError(null)
                         setPassword(e.target.value)
