@@ -31,3 +31,10 @@ a{
 .not-persist{
   display: none;
 }
+button:checked{
+    padding: 10px;
+   
+}
+
+
+b
