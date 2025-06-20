@@ -4,7 +4,7 @@ const jwt =require('jsonwebtoken')
 const saltRounds = 10;
 const validator =require('validator')
 //register
-
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const register = async (req, res) => {
     const { username, email, password ,confirmPassword} =req.body;
     if(!username){
@@ -13,7 +13,7 @@ const register = async (req, res) => {
             type:"name"
         })
     }
-    if(!email){
+    if(emailRegex.test(email)){
         return res.status(400).json({
             msg: "email is required",
             type:"email"
