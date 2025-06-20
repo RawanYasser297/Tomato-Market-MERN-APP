@@ -62,7 +62,7 @@ const UpdateItem=async(e)=>{
  
 
   return (<form className="container" onSubmit={UpdateItem} >
-      <h4 style={{fontWeight:'bolder',marginBottom:"10px"}}>add new item</h4>
+      <h4 style={{fontWeight:'bolder',marginBottom:"10px"}}>Edit {initialValue.title}</h4>
       <div className="new-item-container ">
         <input type="text"
         defaultValue={initialValue.image}
@@ -140,7 +140,7 @@ const UpdateItem=async(e)=>{
           <p style={{ color: "green", fontWeight: "bold" }}>{msg}</p>
         </div>
       )}
-      <button type="submit" className="button" style={{margin:"15px"}}>add</button>
+      <button type="submit" className="button" style={{margin:"15px"}}>Edit</button>
     
       <Link to='/admin' className='back-link' >
       back to menu
