@@ -3,8 +3,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import categoryList from '../category';
 
-const EditItem = (e) => {
-   e.preventDefault()
+const EditItem = () => {
+  
   const params = useParams();
   const id = params.id;
   const [initialValue,setInitialValue]=useState({image: '',
@@ -35,8 +35,8 @@ useEffect(()=>{
 
 
 
-const UpdateItem=async()=>{
-  
+const UpdateItem=async(e)=>{
+   e.preventDefault()
   try{
   const response =await axios.patch(`https://tomato-market-mern-app-server.onrender.com/admin/${id}`,initialValue)
   console.log(response)
