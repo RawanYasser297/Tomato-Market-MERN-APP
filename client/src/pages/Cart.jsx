@@ -71,7 +71,7 @@ const findItem=(item)=>{
                 <th>Offer</th>
                 <th>Counter</th>
                 <th>Total</th>
-                <th>Actions</th>
+                <th>Delete</th>
               </tr>
             </thead>
             
