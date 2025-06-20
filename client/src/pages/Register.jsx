@@ -74,7 +74,7 @@ const Register = () => {
                         </div>:""
                     }
                     <label>Password</label>
-                    <input type={passwordError?'error-input':'text'}  placeholder="Password" onChange={(e)=>{
+                    <input type={passwordError?'error-input':'password'}  placeholder="Password" onChange={(e)=>{
                         setEmailsError(null)
                         setNameError(null)
                         setPasswordError(null)
@@ -87,7 +87,7 @@ const Register = () => {
                     </div>:""
                     }
                     <label>Confirm Password</label>
-                    <input type={confirmError?'error-input':'text'}  placeholder="Confirm Password" onChange={(e)=>{
+                    <input type={confirmError?'error-input':'password'}  placeholder="Confirm Password" onChange={(e)=>{
                         setEmailsError(null)
                         setNameError(null)
                         setPasswordError(null)
