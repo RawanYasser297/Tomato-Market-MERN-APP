@@ -19,12 +19,11 @@ const register = async (req, res) => {
             type:"email"
         })
     }
-    if(!password){
-        return res.status(400).json({
-            msg: "password is required",
-            type:"password"
-        })
-    }
+    
+        if(!password){
+            return res.status(400).json({msg: "Please enter your password",type:"password"})
+        }
+    
     if(!confirmPassword){
         return res.status(400).json({
             msg: "confirmPassword is required",
